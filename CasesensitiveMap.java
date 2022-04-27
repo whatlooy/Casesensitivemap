@@ -22,7 +22,7 @@ public class CasesensitiveMap extends HashMap<String,Object> {
 		return super.containsKey(key.toLowerCase());
 	}
 	public void putAll(HashMap<String ,String> mp) {
-		 super.putAll(mp);
+		 mp.forEach((k,v)->put(k,v));
 	}
 	
 	@Override
