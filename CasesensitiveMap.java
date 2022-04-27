@@ -7,20 +7,7 @@ public class CasesensitiveMap extends HashMap<String,Object> {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String key;
-	private String value;
-	public String getValue() {
-		return value;
-	}
-	public void setValue(String value) {
-		this.value = value;
-	}
-	public String getKey() {
-		return key;
-	}
-	public void setKey(String key) {
-		this.key = key;
-	}
+	
 	
 	@Override
 	public Object put(String key,Object value) {
@@ -35,7 +22,13 @@ public class CasesensitiveMap extends HashMap<String,Object> {
 		return super.containsKey(key.toLowerCase());
 	}
 	public void putAll(HashMap<String ,String> mp) {
+		 super.putAll(mp);
+	}
+	
+	@Override
+	public String toString() {
 		
+		return super.toString();
 	}
 }
 	
